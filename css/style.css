@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+}
+
+#jumb{
+    margin-top: 64px;
+}
+.card>img{
+    height: 550px;
+    filter: blur(4px);    
+}
+.card-title{
+    margin-top: 100px;
+}

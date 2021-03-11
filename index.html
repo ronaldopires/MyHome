@@ -8,19 +8,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- Link -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css">
 
     <title>Ronaldo Carvalho | Front-End Development</title>
 </head>
 
 <body>
+    <span id="home"></span>
     <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand mb-0" href="index.html">Ronaldo Carvalho</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
@@ -30,13 +32,16 @@
                 <div class="collapse navbar-collapse" id="menuPrincipal">
                     <ul class="navbar-nav ms-auto mb-2 text-uppercase">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Portfólio</a>
+                            <a class="nav-link" href="#sobre">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contato</a>
+                            <a class="nav-link" href="#portfolio">Portfólio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
                         </li>
                     </ul>
                 </div>
@@ -46,23 +51,171 @@
     <div class="container-fluid p-0" id="jumb">
         <div class="row m-0">
             <div class="col p-0">
-                <div class="card text-white rounded-0 border-0" id="MyCard">
-                    <img src="image/banner.jpg" class="card-img w-100 img-fluid rounded-0" alt="">
+                <div class="card text-white rounded-0 border-0">
+                    <img src="image/banner1.png" class="card-img w-100 img-fluid rounded-0" alt="">
                     <div class="card-img-overlay">
-                      <h1 class="card-title">Ronaldo Pires de Carvalho</h1>
-                      <p class="card-text">Sou um Desenvolvedor Web.</p>
+                        <h1 class="card-title pt-3">Ronaldo Pires de Carvalho</h1>
+                        <p class="card-text">Sou um Desenvolvedor Web.</p>
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
     </div>
-
-    <!-- Optional JavaScript; choose one of the two! -->
+    <span id="sobre"></span>
+    <div class="container-fluid py-3">
+        <div class="row p-0">
+            <div class="col">
+                <h1 class="text-center">Sobre mim</h1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam accusantium obcaecati deserunt
+                corrupti, quasi, nam atque enim iusto quas consequatur aperiam, aspernatur distinctio blanditiis nisi?
+                Optio corrupti iste quo molestiae?
+                Vel numquam error, nobis omnis soluta at maxime laboriosam praesentium voluptatum, excepturi veniam
+                voluptate recusandae temporibus veritatis enim cum maiores dicta eveniet perspiciatis placeat quam.
+                Laborum voluptatem odit necessitatibus reprehenderit?
+                Sit, similique inventore eum illum vitae, voluptas, vel quia accusamus culpa earum consequatur beatae?
+                Maxime qui nemo impedit labore sed maiores, nesciunt voluptate sapiente commodi eos dolores quam eum
+                quaerat?
+                Doloribus tempora suscipit veniam eos unde facilis dolores, aut esse sunt, alias at ratione numquam
+                asperiores exercitationem corrupti! Nemo laborum aliquam corporis provident totam earum eligendi, nam
+                qui incidunt laudantium!
+                Dolor quis nostrum eum odio eaque non cumque ex, reprehenderit voluptas aperiam accusamus, laborum harum
+                quia voluptatibus blanditiis a. Eligendi architecto aliquam, vero dolore porro molestiae fuga pariatur
+                minima adipisci.
+            </div>
+        </div>
+    </div>
+    <span id="portfolio"></span>
+    <div class="container-fluid py-3">
+        <div class="row p-0">
+            <div class="col">
+                <h1 class="text-center">Portfólio</h1>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
+                    <div class="col">
+                        <div class="card h-100 efeitosCard">
+                            <img src="image/card/01.png" class="card-img-top d-block w-100 img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>        
+                            </div>
+                            <div class="card-footer bg-white">
+                                <a class="btn btn-primary" href="#" role="button"><i class="bi bi-plus"></i> Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 efeitosCard">
+                            <img src="image/card/4.jpg" class="card-img-top w-100 img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>       
+                            </div>
+                            <div class="card-footer bg-white">
+                                <a class="btn btn-primary" href="#" role="button"><i class="bi bi-plus"></i> Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 efeitosCard">
+                            <img src="image/card/2.png" class="card-img-top w-100 img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to additional content.</p>
+                            </div>
+                            <div class="card-footer bg-white">
+                                <a class="btn btn-primary" href="#" role="button"><i class="bi bi-plus"></i> Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 efeitosCard">
+                            <img src="image/card/3.jpg" class="card-img-top d-block w-100 img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                            <div class="card-footer bg-white">
+                                <a class="btn btn-primary" href="#" role="button"><i class="bi bi-plus"></i> Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <span id="contato"></span>
+    <div class="container-fluid py-3">
+        <h1 class="text-center">Contato</h1>
+        <hr class="mb-3">
+        <div class="row p-0">
+            <div class="col">
+                1
+            </div>
+            <div class="col py-4">
+                <form class="row g-3 needs-validation" novalidate>
+                    <div class="col-md-6">
+                        <label for="validationCustom01" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="validationCustom01" required>
+                        <div class="invalid-feedback">Digite seu nome...</div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="validationCustomUsername" class="form-label">E-mail</label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                            <input type="text" class="form-control" id="validationCustomUsername"
+                                aria-describedby="inputGroupPrepend" required>
+                            <div class="invalid-feedback">Digite um e-mail...</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="frm-contato" class="form-label">Contato</label>
+                        <input type="text" class="form-control" id="frm-contato" placeholder="Opcional">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="validationCustom03" class="form-label">Assunto</label>
+                        <input type="text" class="form-control" id="validationCustom03" required>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="validationTextarea" class="form-label">Mensagem</label>
+                        <textarea class="form-control" id="validationTextarea" placeholder="Digite sua mensagem..." required></textarea>
+                        <div class="invalid-feedback">
+                          Por favor escreva sua mensagem...
+                        </div>
+                      </div>
+                    <div class="col-12">
+                        <button class="btn btn-dark" type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="card-footer">
+        <div class="row">
+            <div class="col pe-5">
+                <div class="float-end btn-group" role="group" aria-label="Basic example">
+                    <a class="socialBtn" type="button" target="_blank" href="#"><i class="bi bi-github"></i></a>
+                    <a class="socialBtn" type="button" target="_blank" href="#"><i class="bi bi-linkedin"></i></a>
+                    <a class="socialBtn" type="button" target="_blank" href="#"><i class="bi bi-facebook"></i></a>
+                    <a class="socialBtn" type="button" target="_blank" href="#"><i class="bi bi-whatsapp"></i></a>
+                  </div>
+            </div>
+            <div class="col-12 text-center p-3">
+                &copy; 2021 Copyright - <a class="alert-link" href="https://github.com/ronaldopires/" target="_blank">Ronaldo Carvalho</a>
+            </div>
+        </div>
+    </div>
+    <!--btn top-->
+    <div class="col invisivel" id="top">
+        <a href="#home" role="button"><i class="bi bi-chevron-up"></i></a>
+    </div>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-        crossorigin="anonymous"></script>
+    <script src="js/jquery-3.6.0.min.js" type="text/JavaScript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js" type="text/JavaScript"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--

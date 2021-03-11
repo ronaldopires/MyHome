@@ -11,9 +11,58 @@ body{
     margin-top: 64px;
 }
 .card>img{
-    height: 550px;
-    filter: blur(4px);    
+    max-height: 700px;
+    /*filter: blur(2px);*/
 }
-.card-title{
-    margin-top: 100px;
+
+/*card*/
+.efeitosCard:hover{
+    transform: scale(1.03);
+    transition: all .5s;
+}
+.efeitosCard>img{
+    height: 250px;
+}
+
+/*btn top*/
+#top{
+    background: #212529 none repeat scroll 0 0;
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+    z-index: 99;
+    text-align: center;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    transition: all .5s ease-in-out;
+}
+#top>a{
+    display: block;
+    width: 45px;
+    height: 45px;
+}
+#top>a>i{
+    color: #f8f9fa;
+    font-size: 35px;
+    line-height: 45px;
+}
+#top:hover{
+    background-color: #0f0e0e;
+}
+.invisivel{
+    visibility: hidden;
+    display: none;
+}
+.socialBtn{
+    border: 0;
+    outline: 0;
+    color: #212529;
+    padding: 5px;
+    font-size: 20px;
+    transition: transform .5s;
+}
+.socialBtn:hover{
+    color: #064686;
+    transform: translateY(-5px) scale(1.2);;
 }
